@@ -106,7 +106,7 @@ def decimal_to_hexadecimal(user_input_number):
     import math  # Importing Math module
     nibble_length = [0, 0, 0, 0]
     positional_list = [8, 4, 2, 1]
-
+    conversion_answer = []
     binary_num = []  # Creates a list variable named binary_num
     if user_input_number.isnumeric:
         user_input_number = int(user_input_number)
@@ -138,7 +138,25 @@ def decimal_to_hexadecimal(user_input_number):
                 for num1, num2 in zip(list_to_multiply, positional_list):
                     empty_list.append(num1 * num2)
                 hexadecimalNum[i] = empty_list
-            print(hexadecimalNum)
+            for i in range(0, len(hexadecimalNum), 1):
+                if sum(hexadecimalNum[i]) <= 9:
+                    conversion_answer.append(sum(hexadecimalNum[i]))
+                else:
+                    if sum(hexadecimalNum[i]) == 10:
+                        conversion_answer.append("A")
+                    elif sum(hexadecimalNum[i]) == 11:
+                        conversion_answer.append("B")
+                    elif sum(hexadecimalNum[i]) == 12:
+                        conversion_answer.append("C")
+                    elif sum(hexadecimalNum[i]) == 13:
+                        conversion_answer.append("D")
+                    elif sum(hexadecimalNum[i]) == 14:
+                        conversion_answer.append("E")
+                    else:
+                        conversion_answer.append("F")
+            print("Answer = ")
+            print("0x", end='')
+            print(*conversion_answer, sep="")
 
 
             def exitLoop():
