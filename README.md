@@ -1,5 +1,5 @@
 # Number-Converter
-This is my first ever python project used to learn the basics of the Python through the concept of number of conversion between bases. 
+This is my first ever python project used to learn the basics of the Python through the concept of number conversion between bases. 
 
 ## How to use:
 1. Download the zip file
