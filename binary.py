@@ -21,11 +21,7 @@ def menu():
                 binaryconverter(user_input_number)
             elif(user_choice == 2):
                  decimal_to_hexadecimal(user_input_number)
-        elif int(user_choice) == 3:
-            print("Still working on it")
-            menu()
-            # Run binary to decimal converter
-        elif int(user_choice) == 4:
+                    elif int(user_choice) == 4:
             print("Still working on it")
             menu()
             # Run binary to hexadecimal
@@ -37,6 +33,7 @@ def menu():
             print("Still working on it")
             menu()
             # Run hexadecimal to binary
+            # Run binary to decimal converter
         else:
             print("Please choose an option using the assigned keys.")
             menu()
@@ -48,7 +45,6 @@ def menu():
     else:
         print("Please choose an option using the assigned keys.")
         menu()
-
 def binaryconverter(user_input_number):
     """
     This functions takes a user input number and converts it into it's equivalent binary number.
