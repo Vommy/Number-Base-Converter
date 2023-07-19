@@ -20,7 +20,7 @@ def menu():
             if(use_choirce == 1):
                 binaryconverter(user_input_number)
             elif(user_choice == 2):
-                 decimal_to_hexadecimal(user_input_number)s
+                 decimal_to_hexadecimal(user_input_number)
         elif int(user_choice) == 3:
             print("Still working on it")
             menu()
