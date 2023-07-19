@@ -15,13 +15,12 @@ def menu():
        """)
     user_choice = input()
     if user_choice.isnumeric():
-        if int(user_choice) == 1:
+        if int(user_choice) == 1 || int(user_choice) == 2:
             user_input_number = input("What number would you like to convert? \n")
-            binaryconverter(user_input_number)
-        elif int(user_choice) == 2:
-            user_input_number = input("What number would you like to convert? \n")
-            decimal_to_hexadecimal(user_input_number)
-            # Run decimal to hexadecimal converter
+            if(use_choirce == 1):
+                binaryconverter(user_input_number)
+            elif(user_choice == 2):
+                 decimal_to_hexadecimal(user_input_number)s
         elif int(user_choice) == 3:
             print("Still working on it")
             menu()
