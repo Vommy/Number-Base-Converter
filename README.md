@@ -1,4 +1,6 @@
 # Number-Converter
+Converts numbers between decimal, binary and hexadecimal using string manipulation. 
+
 This is my first ever python project used to learn the basics of the Python through the concept of number conversion between bases. 
 
 ## How to use:
